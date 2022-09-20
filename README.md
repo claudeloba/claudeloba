@@ -1,3 +1,7 @@
+
+
+https://user-images.githubusercontent.com/100008570/191140300-ac440016-84d4-4d38-9d69-a4181aa96909.mp4
+
 - 👋 Hi, I’m @claudeloba
 - 👀 I’m interested in C#, JavaScript, Music Production!
 - 🌱 I’m currently learning Full-stack development open source at Nackademin, in Stockholm.
