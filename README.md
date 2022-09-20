@@ -1,10 +1,12 @@
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/100008570/191142515-f8755cfd-4169-4e4c-9bbe-5a5e26e62774.gif)
+<img alt="welcome!" src="https://user-images.githubusercontent.com/100008570/191144433-c4a8e732-6bfd-497d-8e7f-b56c61ba0a31.png">
 
-- 👋 Hi, I’m @claudeloba
-- 👀 I’m interested in C#, JavaScript, Music Production!
-- 🌱 I’m currently learning Full-stack development open source at Nackademin, in Stockholm.
-- 💞️ I’m looking to collaborate on a drum machine vst built upon c++.
-- 📫 How to reach me ...
+<!--- 🌱 I am currently studying Full Stack Dev.
+👀 I love C#, JavaScript & Music Production!
+
+🤘If you want to collaborate, I am currently trying to figure out how to create the worlds greatest drum machine built upon C++ & JUCE. 🤔
+--->
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=claudeloba)](https://github.com/claudeloba/github-readme-stats)
 
 <!---
 claudeloba/claudeloba is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
