@@ -10,13 +10,10 @@
 <a href="https://www.linkedin.com/in/claude-marcel-loba-07726223/">
   <img align="left" alt="Claude-Marcel Loba LinkedIn" width="21px" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/099dc12b59179d07d534069bc8551718f786d91a/images/svg/linkedin.svg" />
 </a>
-<br/><br/>
-<p align="center">
-<!--<img alt="spotify" width="235px" src="https://open.spotify.com/user/thephatkid?si=a031a058cbeb4a0f" /> -->
-</p>
-<br/><br/>
+<a href="https://open.spotify.com/user/thephatkid?si=31426b985fd443d8">
+  <img align="left" alt="Claude-Marcel Loba LinkedIn" width="21px" src="https://camo.githubusercontent.com/15d4e1b8bf3ed25b7131cc93f248f86cc42deaf9e19fdb61aa1ba3b46e0400a5/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f73706f746966792e737667" /
 
-
+<br><br>
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=claudeloba)](https://github.com/claudeloba/github-readme-stats)
 
