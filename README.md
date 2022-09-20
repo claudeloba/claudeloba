@@ -15,7 +15,7 @@
 
 <br><br>
 
-[github stats](https://github-readme-stats.vercel.app/api?username=claudeloba&show_icons=true&theme=gruvbox)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=claudeloba&show_icons=true&theme=calm)
 
 <!---
 claudeloba/claudeloba is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
