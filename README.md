@@ -1,6 +1,4 @@
-
-
-https://user-images.githubusercontent.com/100008570/191140300-ac440016-84d4-4d38-9d69-a4181aa96909.mp4
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/100008570/191142515-f8755cfd-4169-4e4c-9bbe-5a5e26e62774.gif)
 
 - 👋 Hi, I’m @claudeloba
 - 👀 I’m interested in C#, JavaScript, Music Production!
