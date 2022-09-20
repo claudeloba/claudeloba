@@ -19,6 +19,7 @@
 <br><br>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=claudeloba&theme=calm)](https://github.com/claudeloba/github-readme-stats)
+
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=claudeloba&show_icons=true&theme=calm&layout=compact)
 
 
