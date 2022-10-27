@@ -1,3 +1,11 @@
+
+<div align="center">
+
+# <a href="https://www.linkedin.com/in/claude-marcel-loba-07726223/"> See some of my work here :smiley:
+</a>
+
+</div>
+
 <img alt="welcome!" src="https://user-images.githubusercontent.com/100008570/191144433-c4a8e732-6bfd-497d-8e7f-b56c61ba0a31.png">
 
 <!--- 🌱 I am currently studying Full Stack Dev.
