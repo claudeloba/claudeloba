@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# <a href="https://www.linkedin.com/in/claude-marcel-loba-07726223/"> See some of my work here :smiley:
+# <a href="https://claudeloba.github.io/"> See some of my work here :smiley:
 </a>
 
 </div>
