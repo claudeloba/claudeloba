@@ -1,0 +1,27 @@
+RPC=https://ethereum-rpc.publicnode.com
+Compiling 339 files with Solc 0.8.24
+Solc 0.8.24 finished in 646.55ms
+Error: Compiler run failed:
+Error (2449): Definition of base has to precede definition of derived contract
+   --> test/foundry/new/helpers/FuzzEngine.sol:199:5:
+    |
+199 |     FuzzSetup,
+    |     ^^^^^^^^^
+RPC=https://eth.llamarpc.com
+Compiling 339 files with Solc 0.8.24
+Solc 0.8.24 finished in 646.05ms
+Error: Compiler run failed:
+Error (2449): Definition of base has to precede definition of derived contract
+   --> test/foundry/new/helpers/FuzzEngine.sol:199:5:
+    |
+199 |     FuzzSetup,
+    |     ^^^^^^^^^
+RPC=https://rpc.ankr.com/eth
+Compiling 339 files with Solc 0.8.24
+Solc 0.8.24 finished in 653.33ms
+Error: Compiler run failed:
+Error (2449): Definition of base has to precede definition of derived contract
+   --> test/foundry/new/helpers/FuzzEngine.sol:199:5:
+    |
+199 |     FuzzSetup,
+    |     ^^^^^^^^^
