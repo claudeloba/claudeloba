@@ -1,0 +1,75 @@
+name: Seaport P1 EIP1271 exact-runtime gate
+
+on:
+  push:
+    branches:
+      - codex/seaport-p1-lab-20260909
+    paths:
+      - "seaport-p1/**"
+      - ".github/workflows/seaport-p1-eip1271.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: stable
+
+      - name: Prepare exact Seaport 1.6 checkout
+        run: |
+          git clone --recursive https://github.com/ProjectOpenSea/seaport-1.6.git target
+          cd target
+          git checkout 4240dc6b30fa73f4b6b437fb588ebe583e796e3a
+          git submodule update --init --recursive
+          cp ../seaport-p1/EIP1271EmptyReturnFork.t.sol test/foundry/
+
+      - name: Execute on pinned Ethereum fork
+        id: forge
+        shell: bash
+        run: |
+          set +e
+          mkdir -p p1-results
+          RPCS=(
+            "https://ethereum-rpc.publicnode.com"
+            "https://eth.llamarpc.com"
+            "https://rpc.ankr.com/eth"
+          )
+          rc=1
+          for rpc in "${RPCS[@]}"; do
+            echo "RPC=$rpc" | tee -a p1-results/eip1271.log
+            (
+              cd target
+              ETH_RPC_URL="$rpc" forge test \
+                --match-contract EIP1271EmptyReturnForkTest \
+                -vvvv
+            ) 2>&1 | tee -a p1-results/eip1271.log
+            rc=${PIPESTATUS[0]}
+            if [ "$rc" -eq 0 ]; then
+              break
+            fi
+          done
+          echo "$rc" > p1-results/eip1271.rc
+          if [ "$rc" -eq 0 ]; then
+            echo SAFE_OR_EXPECTED_REVERT > p1-results/EIP1271_SAFE.txt
+          else
+            echo TEST_FAILED_OR_CANDIDATE_TRIGGERED > p1-results/EIP1271_REVIEW.txt
+          fi
+          exit 0
+
+      - name: Commit evidence to branch
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "seaport-p1-lab"
+          git config user.email "seaport-p1-lab@users.noreply.github.com"
+          git add p1-results
+          git commit -m "Record EIP1271 exact-runtime gate" || true
+          git push origin HEAD:codex/seaport-p1-lab-20260909 || true
