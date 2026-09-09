@@ -1,0 +1,23 @@
+name: Seaport P1 public runner smoke
+
+on:
+  push:
+    branches:
+      - codex/seaport-p1-lab-20260909
+    paths:
+      - ".github/workflows/seaport-p1-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          uname -a
+          python3 --version
+          git --version
